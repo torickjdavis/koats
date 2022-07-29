@@ -23,11 +23,12 @@ function server() {
   app.use(c2k(helmet()));
   app.use(c2k(cors()));
 
-  app.use(async (ctx) => {
+  app.use((ctx) => {
     ctx.body = 'Hello, World';
   });
 
   app.listen({ port: PORT, host: HOST }, () => {
+    // eslint-disable-next-line no-console
     console.log(`server listening at http://${HOST}:${PORT}`);
   });
 }
