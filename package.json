@@ -8,6 +8,7 @@
     "start": "npm run build && node dist/server.js",
     "dev": "nodemon src/server.ts",
     "build": "tsc",
+    "lint": "prettier --write . && eslint --fix --cache --max-warnings 0",
     "type-check": "tsc --noEmit"
   },
   "author": "",
