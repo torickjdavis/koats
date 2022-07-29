@@ -24,7 +24,9 @@ function server() {
   app.use(async (ctx) => {
     ctx.body = 'Hello, World';
   });
-  app.listen({ port: PORT, host: HOST }, () => console.log(`server listening at http://${HOST}:${PORT}`));
+  app.listen({ port: PORT, host: HOST }, () =>
+    console.log(`server listening at http://${HOST}:${PORT}`)
+  );
 }
 
 if (require.main === module) server();
