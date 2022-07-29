@@ -28,6 +28,7 @@ function server() {
   });
 
   app.listen({ port: PORT, host: HOST }, () => {
+    // eslint-disable-next-line no-console
     console.log(`server listening at http://${HOST}:${PORT}`);
   });
 }
