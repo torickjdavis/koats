@@ -1,7 +1,7 @@
 {
   "name": "koats",
   "version": "0.0.0",
-  "description": "A sample Koa application with TypeScript.",
+  "description": "An initial Koa application with TypeScript.",
   "author": "Torick Davis <torickjdavis@gmail.com>",
   "license": "MIT",
   "main": "src/server.ts",
