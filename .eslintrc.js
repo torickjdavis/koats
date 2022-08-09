@@ -16,6 +16,7 @@ module.exports = {
     {
       files: ['*.ts'],
       extends: [
+        'airbnb-typescript/base', // alternatively 'airbnb-typescript' for React support
         'plugin:@typescript-eslint/recommended',
         'plugin:@typescript-eslint/recommended-requiring-type-checking',
         'plugin:@typescript-eslint/strict',
